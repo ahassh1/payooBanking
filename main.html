@@ -15,7 +15,7 @@
             <nav class="flex justify-around items-center">
                 <img class="w-16" src="./assets/Group.png" alt="">
                 <div>
-                    <h1 class="text-3xl font-bold">$4500</h1>
+                    <h1 class="text-3xl font-bold">$ <span id="main-balence">4500</span></h1>
                     <p class="border rounded p-1">available balence</p>
                 </div>
                 <button class="btn ">logout</button>
@@ -55,7 +55,7 @@
             </section>
 
             <section>
-                <h1>Add Money</h1>
+                <h1 class="font-semibold text-[18px] mt-5 ">Add Money</h1>
 
                 <div class="">
                     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -73,11 +73,13 @@
                               <fieldset class="fieldset">
                                 <label class="fieldset-label">Account Number</label>
                                 <input value="01323093470" id="accout-number" type="number" class="input" placeholder="type your number" required/>
+                                <label class="fieldset-label">Amount</label>
+                                <input id="amount" type="number" maxlength="11" class="input" placeholder="type your amount" required/>
                                 <label class="fieldset-label">Pin</label>
                                 <input value="1234" id="pin" type="text" class="input" placeholder="Type your pin" required/>
                                 <div><a class="link link-hover">
                                         Forgot password?</a></div>
-                                <button id="login-btn" class="btn border-none bg-blue-700 btn-neutral hover:bg-red-500 mt-4">Add Money</button>
+                                <button id="add-money" type="submit" class="btn border-none bg-blue-700 btn-neutral hover:bg-red-500 mt-4">Add Money</button>
                             </fieldset>
                         </div>
                       </div>
@@ -86,5 +88,7 @@
             </section>
           </header>
    </section>
+
+   <script src="./script/addMoney.js"></script>
 </body>
 </html>
