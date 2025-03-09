@@ -31,8 +31,6 @@ document.getElementById('add-money')
     }
 })  
 
-  
-
 //     if(convertedPin===1234){
 //        const sum = convertedMainBalence + convertedAmount;
 //        document.getElementById('main-balence').innerText= sum;

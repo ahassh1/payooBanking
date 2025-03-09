@@ -7,7 +7,7 @@ function getInputValueById(id){
 function getInnerTextByID(id){
     const value = document.getElementById(id).innerText;
     const convertedValue = parseFloat(value)
-    const convertedValue;
+    console.log(convertedValue);
 }
 
 function setInnerTextByIDandValue(id, value){

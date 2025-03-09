@@ -10,12 +10,21 @@ document.getElementById('cashOut-btn')
      if(pinNumber===1234){
          const sum = mainBalence - amount;
         setInnerTextByIDandValue('main-balence', sum)
+           
+        const container = document.getElementById('transection-container');
+        const p =document.createElement('p');
+        p.innerText = `
+        cashout ${amount} from ${accountNumber} account`
+        container.appendChild(p)
+        }  
+
     }
      else{
         alert('pin not matched')
      }
+ 
+     else{
+     alert('account number is not valid')
   }
-  else{
-    alert('account number is not valid')
-  }
-})
+    
+    })

@@ -12,7 +12,13 @@ document.getElementById('add-money')
               const sum = mainBalence + amount;
             //   document.getElementById('main-balence').innerText=sum;
               setInnerTextByIDandValue('main-balence',sum)
-        }
+
+           const container = document.getElementById('transection-history');
+              const p =document.createElement('p');
+              p.innerText = `
+              added ${amount} from ${account} account`
+              container.appendChild(p)
+              }  
         else{
             console.log('pin not valid')
         }
