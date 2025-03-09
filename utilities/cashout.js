@@ -6,6 +6,12 @@ document.getElementById('cashOut-btn')
   const amount = getInputValueById('cashout-amount');
   const pinNumber = getInputValueById('cashout-pin');
   const mainBalence = getInnerTextByID('main-balence')
+
+  if(amount>mainBalence){
+   alert('invalid amount')
+   return;
+  }
+
   if(accountNumber.length===11){
      if(pinNumber===1234){
          const sum = mainBalence - amount;
